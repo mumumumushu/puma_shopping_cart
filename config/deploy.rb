@@ -9,9 +9,9 @@ require 'mina/git'
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :domain, 'root@10.18.6.112' #ubuntu@10.18.6.112
+set :domain, 'ubuntu@10.18.6.112' #ubuntu@10.18.6.112
 set :deploy_to, '/var/www/puma_shopping_cart'
-set :repository, 'git://...'
+set :repository, 'https://github.com/mumumumushu/puma_shopping_cart.git'
 set :branch, 'master'
 
 # Optional settings:

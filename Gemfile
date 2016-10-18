@@ -1,7 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'mina'
-gem "puma", '~> 3.0'
+
+gem 'mina', require: false  #超级666的部署工具
+gem 'mina-multistage', require: false #mina插件，用于多环境发布，比如英文、中文或者正式发布环境、测试环境
+
+gem 'unicorn'
+gem 'mina-unicorn', require: false
+
+
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
