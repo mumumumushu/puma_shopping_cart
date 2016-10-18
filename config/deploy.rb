@@ -10,7 +10,7 @@ require 'mina/git'
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :domain, 'ubuntu@10.18.6.112' #ubuntu@10.18.6.112
-set :deploy_to, '/var/www/puma_shopping_cart'
+set :deploy_to, '/home/ubuntu/puma_shopping_cart'
 set :repository, 'https://github.com/mumumumushu/puma_shopping_cart.git'
 set :branch, 'master'
 
