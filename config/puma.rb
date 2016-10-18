@@ -8,7 +8,7 @@ workers 2 #4
 #项目名
 app_name = "puma_shopping_cart"
 #项目路径
-application_path = "/home/deploy/#{app_name}"
+application_path = "/home/ubuntu/#{app_name}"
 #这里一定要配置为项目路径下地current
 directory application_path
 
