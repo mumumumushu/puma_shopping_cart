@@ -67,7 +67,7 @@ task :environment do
 
   # queue  %[echo "-----> Be sure to edit '#{deploy_to}/#{shared_path}/config/database.yml'."]
 
-  
+
 end
 
 # Put any custom commands you need to run at setup
@@ -85,6 +85,7 @@ task :deploy do
     # instance of your project.
     invoke :'git:clone'
     invoke :'deploy:link_shared_paths'
+    invoke :'gem:install:bundler'
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
